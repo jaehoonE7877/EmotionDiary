@@ -7,32 +7,41 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+enum emotion : Int{
+    case happy, love, like, embarrased, upset, sleepy, boring, depressed, sad
+}
 
-    
+
+class ViewController: UIViewController {
     
     @IBOutlet var emoLabelCollection: [UILabel]!
-    
     @IBOutlet var emoButtonCollection: [UIButton]!
-    
-    
+        
     
     var emoName = ["행복해", "사랑해", "좋아해", "당황해", "속상해", "졸립해", "심심해", "우울해", "눈물해"]
-    var emoCnt1 = 0, emoCnt2 = 0, emoCnt3 = 0, emoCnt4 = 0, emoCnt5 = 0, emoCnt6 = 0, emoCnt7 = 0, emoCnt8 = 0, emoCnt9 = 0
+    var emotionArray = [0,0,0,0,0,0,0,0,0]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
         designLabel(emoLabelCollection)
-        let emoCnt = 0
+        
+        
         for i in 0...8 {
-            emoLabelCollection[i].text = emoName[i] + " \(emoCnt)"
+            emoLabelCollection[i].text = resultLabelAppear(i)
+            emoButtonCollection[i].tag = i
         }
+        
+        //let image = UIImage(named: "sesac-slime6")?.renderingMode(.alwaysOriginal)
+//        emotionFirstLabel.text = setUserNickname()
+//
+//        view.backgroundColor = example().0
+//        emoButtonCollection.randomElement()!.setImage(UIImage(named: example().2), for: .normal)
         
     }
 
-    
+    //버튼 아래 레이블 설정
     func designLabel(_ labelCollection: [UILabel]){
         
         for item in labelCollection {
@@ -43,56 +52,97 @@ class ViewController: UIViewController {
         
     }
     
+//    func example() -> (UIColor, String, String){
+//        let color: [UIColor] = [.yellow , .red , .blue]
+//        let image: [String] = ["sesac_slime6","sesac_slime7","sesac_slime8","sesac_slime5"]
+//
+//        return (color.randomElement()!, "고래밥", image.randomElement()!)
+//    }
     
+    
+//    func setUserNickname() -> String {
+//
+//        let nickname = ["고래밥", "칙촉", "격투가"]
+//        let select = nickname.randomElement()!
+//
+//        return "저는 \(select)입니다."
+//
+//    }
+    
+    func resultLabelAppear(_ num: Int) -> String {
+        return emoName[num] + " \(emotionArray[num])"
+    }
+    
+    
+    @IBAction func emoTapped(_ sender: UIButton) {
+
+        emotionArray[sender.tag] += 1
+        
+        //emoLabelCollection[sender.tag].text = resultLabelAppear(sender.tag)
+        
+        //showAlertController()
+        
+        let emotion1 = sender.tag
+        
+        switch emotion1 {
+        case emotion.happy.rawValue:
+            emoLabelCollection[emotion1].text = resultLabelAppear(emotion1)
+        case emotion.boring.rawValue:
+            emoLabelCollection[emotion1].text = resultLabelAppear(emotion1)
+        case emotion.depressed.rawValue:
+            emoLabelCollection[emotion1].text = resultLabelAppear(emotion1)
+        case emotion.embarrased.rawValue:
+            emoLabelCollection[emotion1].text = resultLabelAppear(emotion1)
+        case emotion.like.rawValue:
+            emoLabelCollection[emotion1].text = resultLabelAppear(emotion1)
+        case emotion.love.rawValue:
+            emoLabelCollection[emotion1].text = resultLabelAppear(emotion1)
+        case emotion.sad.rawValue:
+            emoLabelCollection[emotion1].text = resultLabelAppear(emotion1)
+        case emotion.sleepy.rawValue:
+            emoLabelCollection[emotion1].text = resultLabelAppear(emotion1)
+        case emotion.upset.rawValue:
+            emoLabelCollection[emotion1].text = resultLabelAppear(emotion1)
+        default :
+            print("잘못된 입력입니다.")
+        
+    }
+    
+    func showAlertController() {
+        
+        //1. 흰색 바탕 만들어주기 + 글씨 넣기 : UIAlertController
+        let alert = UIAlertController(title: "타이틀", message: "여기는 메시지가 들어갑니다.", preferredStyle: .actionSheet)
+        
+        //2. 버튼 만들기 -> cancel style은 단 하나만 있어야 한다.
+        let ok = UIAlertAction(title: "확인", style: .destructive, handler: nil)
+        let cancel = UIAlertAction(title: "취소버튼입니다.", style: .cancel, handler: nil)
+        let web = UIAlertAction(title: "웹으로 열기", style: .default, handler: nil)
+        let copy = UIAlertAction(title: "복사하기", style: .default, handler: nil)
+        
+        //3. 버튼이 떨어져있기 때문에 합치기
+        alert.addAction(copy)
+        alert.addAction(web)
+        alert.addAction(cancel)
+        alert.addAction(ok)
+        // -------- 형태는 다 만들어짐
+        
+        //4.띄워주기
+        present(alert, animated: true, completion: nil)
+    }
     
 
-    @IBAction func emo1Tapped(_ sender: UIButton) {
-        emoCnt1 += 1
-        emoLabelCollection[0].text = emoName[0] + " \(emoCnt1)"
-    }
     
-    @IBAction func emo2Tapped(_ sender: UIButton) {
-        emoCnt2 += 1
-        emoLabelCollection[1].text = emoName[1] + " \(emoCnt2)"
-    }
-    @IBAction func emo3Tapped(_ sender: UIButton) {
-        emoCnt3 += 1
-        emoLabelCollection[2].text = emoName[2] + " \(emoCnt3)"
-    }
-    @IBAction func emo4Tapped(_ sender: UIButton) {
-        emoCnt4 += 1
-        emoLabelCollection[3].text = emoName[3] + " \(emoCnt4)"
-    }
-    @IBAction func emo5Tapped(_ sender: UIButton) {
-        emoCnt5 += 1
-        emoLabelCollection[4].text = emoName[4] + " \(emoCnt5)"
-    }
-    @IBAction func emo6Tapped(_ sender: UIButton) {
-        emoCnt6 += 1
-        emoLabelCollection[5].text = emoName[5] + " \(emoCnt6)"
-    }
-    @IBAction func emo7Tapped(_ sender: UIButton) {
-        emoCnt7 += 1
-        emoLabelCollection[6].text = emoName[6] + " \(emoCnt7)"
-    }
-    @IBAction func emo8Tapped(_ sender: UIButton) {
-        emoCnt8 += 1
-        emoLabelCollection[7].text = emoName[7] + " \(emoCnt8)"
-    }
-    @IBAction func emo9Tapped(_ sender: UIButton) {
-        emoCnt9 += 1
-        emoLabelCollection[8].text = emoName[8] + " \(emoCnt9)"
-    }
+    /*
+    todo
+     1. emotionDiary 코드 수정
+     2. bamin autolayout 수정
+     3. 오늘 과제
+     4. til
+     */
     
     
     
     
-    
-    
-    
-    
-    // action 으로 sender 마다 카운트 올려주는 알고리즘 구현해보기
-//    var emoDic = [UILabel:String]()
-//    var emoDic2 = [UIButton:UILabel]()
 }
 
+}

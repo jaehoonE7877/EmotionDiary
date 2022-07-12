@@ -32,7 +32,7 @@
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="emo1Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5gL-Gg-2xH"/>
+                                                            <action selector="emoTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SP8-cU-WOY"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uld-CX-moL">
@@ -46,12 +46,12 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="VHE-cc-Igl">
                                                 <rect key="frame" x="118" y="0.0" width="118" height="118"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UPJ-Ap-3Y5">
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UPJ-Ap-3Y5">
                                                         <rect key="frame" x="0.0" y="0.0" width="118" height="97.5"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Button" image="sesac_slime2"/>
                                                         <connections>
-                                                            <action selector="emo2Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H9l-I3-v6N"/>
+                                                            <action selector="emoTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="75I-eD-TkO"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vu2-Vd-iXc">
@@ -65,12 +65,12 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MUM-i4-e8Q">
                                                 <rect key="frame" x="236" y="0.0" width="118" height="118"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbo-nJ-QhR">
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbo-nJ-QhR">
                                                         <rect key="frame" x="0.0" y="0.0" width="118" height="97.5"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Button" image="sesac_slime3"/>
                                                         <connections>
-                                                            <action selector="emo3Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IeF-G5-DO6"/>
+                                                            <action selector="emoTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="isT-lL-CdG"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="veA-Kk-5T2">
@@ -93,14 +93,14 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Lud-QQ-hd8">
                                                 <rect key="frame" x="0.0" y="0.0" width="118" height="118"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0q-Nh-NPo">
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0q-Nh-NPo">
                                                         <rect key="frame" x="0.0" y="0.0" width="118" height="97.5"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Button" image="sesac_slime4">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="emo4Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hf2-lQ-Kt7"/>
+                                                            <action selector="emoTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Apy-Fs-NmV"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TDF-V3-0XS">
@@ -114,12 +114,12 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="AFd-Yb-7NI">
                                                 <rect key="frame" x="118" y="0.0" width="118" height="118"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vp7-w8-luA">
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vp7-w8-luA">
                                                         <rect key="frame" x="0.0" y="0.0" width="118" height="97.5"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Button" image="sesac_slime5"/>
                                                         <connections>
-                                                            <action selector="emo5Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GtM-Bc-jnS"/>
+                                                            <action selector="emoTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="loo-NA-2so"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W30-uQ-ihs">
@@ -133,12 +133,12 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0AK-hd-rA0">
                                                 <rect key="frame" x="236" y="0.0" width="118" height="118"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixB-gW-al0">
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixB-gW-al0">
                                                         <rect key="frame" x="0.0" y="0.0" width="118" height="97.5"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Button" image="sesac_slime6"/>
                                                         <connections>
-                                                            <action selector="emo6Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NDC-T7-nLd"/>
+                                                            <action selector="emoTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wwV-It-ujC"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1j-1e-9iL">
@@ -161,12 +161,12 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="W0h-5Z-4F9">
                                                 <rect key="frame" x="0.0" y="0.0" width="118" height="118"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Srb-ye-ABx">
+                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Srb-ye-ABx">
                                                         <rect key="frame" x="0.0" y="0.0" width="118" height="97.5"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Button" image="sesac_slime7"/>
                                                         <connections>
-                                                            <action selector="emo7Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LeD-dm-Z6Y"/>
+                                                            <action selector="emoTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cSE-Uc-6Wj"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3d-jX-0di">
@@ -180,12 +180,12 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="T2G-jq-jg3">
                                                 <rect key="frame" x="118" y="0.0" width="118" height="118"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcP-cD-eWz">
+                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcP-cD-eWz">
                                                         <rect key="frame" x="0.0" y="0.0" width="118" height="97.5"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Button" image="sesac_slime8"/>
                                                         <connections>
-                                                            <action selector="emo8Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LfK-y3-bh9"/>
+                                                            <action selector="emoTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VtE-tj-uyL"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6B-hP-U4v">
@@ -199,12 +199,13 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="P9X-CM-ajB">
                                                 <rect key="frame" x="236" y="0.0" width="118" height="118"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kKg-vT-qSb">
+                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kKg-vT-qSb">
                                                         <rect key="frame" x="0.0" y="0.0" width="118" height="97.5"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Button" image="sesac_slime9"/>
                                                         <connections>
-                                                            <action selector="emo9Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZZL-Km-6KO"/>
+                                                            <action selector="emoTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PXt-Uc-DVc"/>
+                                                            <segue destination="ugL-Qo-GSx" kind="show" id="afc-Nj-7NF"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2g-Kz-22u">
@@ -266,6 +267,71 @@
             </objects>
             <point key="canvasLocation" x="879.71014492753625" y="120.53571428571428"/>
         </scene>
+        <!--Segment View Controller-->
+        <scene sceneID="cG3-d5-eUT">
+            <objects>
+                <viewController id="ugL-Qo-GSx" customClass="SegmentViewController" customModule="EmotionDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iNk-uJ-fae">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="안녕하세요안녕하세요아아아앙" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NPS-7H-Cke">
+                                <rect key="frame" x="139" y="108" width="255" height="26"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="안녕하세요안녕하" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URx-h7-mAR">
+                                <rect key="frame" x="20" y="108" width="99" height="27"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="R1v-zz-PH6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="FWr-IK-Ccg">
+                                <rect key="frame" x="139" y="286" width="232" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title=""/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentControlValueChanged:" destination="ugL-Qo-GSx" eventType="valueChanged" id="R8r-Dd-PZM"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOu-iI-uvE">
+                                <rect key="frame" x="139" y="381" width="180" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="v1A-MG-zc8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="URx-h7-mAR" firstAttribute="leading" secondItem="v1A-MG-zc8" secondAttribute="leading" constant="20" id="Ibt-hr-1kc"/>
+                            <constraint firstItem="NPS-7H-Cke" firstAttribute="top" secondItem="v1A-MG-zc8" secondAttribute="top" constant="20" id="Q3l-d7-bDN"/>
+                            <constraint firstItem="v1A-MG-zc8" firstAttribute="trailing" secondItem="NPS-7H-Cke" secondAttribute="trailing" priority="750" constant="20" id="dwp-5t-VEF"/>
+                            <constraint firstItem="NPS-7H-Cke" firstAttribute="leading" secondItem="URx-h7-mAR" secondAttribute="trailing" constant="20" id="qi4-qC-fMa"/>
+                            <constraint firstItem="URx-h7-mAR" firstAttribute="top" secondItem="v1A-MG-zc8" secondAttribute="top" constant="20" id="urZ-Fu-2qx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nGF-Jo-DgX"/>
+                    <connections>
+                        <outlet property="resultLabel" destination="YOu-iI-uvE" id="Uwd-ui-f8i"/>
+                        <outlet property="segmentControl" destination="FWr-IK-Ccg" id="Vjh-fu-TOe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gpS-aU-9w2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1892.753623188406" y="131.91964285714286"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="2SL-ob-ntY">
             <objects>
@@ -296,8 +362,14 @@
         <image name="sesac_slime7" width="278" height="258"/>
         <image name="sesac_slime8" width="278" height="258"/>
         <image name="sesac_slime9" width="278" height="258"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

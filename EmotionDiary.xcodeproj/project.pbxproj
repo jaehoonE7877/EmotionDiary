@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		257F4D91287D224F00475857 /* SegmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257F4D90287D224F00475857 /* SegmentViewController.swift */; };
 		2593AD0E287C1B79002A772D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2593AD0D287C1B79002A772D /* AppDelegate.swift */; };
 		2593AD10287C1B79002A772D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2593AD0F287C1B79002A772D /* SceneDelegate.swift */; };
 		2593AD12287C1B79002A772D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2593AD11287C1B79002A772D /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		257F4D90287D224F00475857 /* SegmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentViewController.swift; sourceTree = "<group>"; };
 		2593AD0A287C1B79002A772D /* EmotionDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmotionDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2593AD0D287C1B79002A772D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2593AD0F287C1B79002A772D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				2593AD0F287C1B79002A772D /* SceneDelegate.swift */,
 				2593AD11287C1B79002A772D /* ViewController.swift */,
 				2593AD13287C1B79002A772D /* Main.storyboard */,
+				257F4D90287D224F00475857 /* SegmentViewController.swift */,
 				2593AD16287C1B7B002A772D /* Assets.xcassets */,
 				2593AD18287C1B7B002A772D /* LaunchScreen.storyboard */,
 				2593AD1B287C1B7B002A772D /* Info.plist */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				257F4D91287D224F00475857 /* SegmentViewController.swift in Sources */,
 				2593AD12287C1B79002A772D /* ViewController.swift in Sources */,
 				2593AD0E287C1B79002A772D /* AppDelegate.swift in Sources */,
 				2593AD10287C1B79002A772D /* SceneDelegate.swift in Sources */,
