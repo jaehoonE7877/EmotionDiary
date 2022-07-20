@@ -26,12 +26,17 @@ class ViewController: UIViewController {
         
         
         designLabel(emoLabelCollection)
-        
-        
+       
         for i in 0...8 {
             emoLabelCollection[i].text = resultLabelAppear(i)
             emoButtonCollection[i].tag = i
+            emoLabelCollection[i].text = "\(UserDefaults.standard.integer(forKey: "emotion"))"
         }
+        
+        
+        
+        
+        
         
         //let image = UIImage(named: "sesac-slime6")?.renderingMode(.alwaysOriginal)
 //        emotionFirstLabel.text = setUserNickname()
@@ -73,38 +78,59 @@ class ViewController: UIViewController {
         return emoName[num] + " \(emotionArray[num])"
     }
     
-    
+    // tap될때 값 저장하는 방법
     @IBAction func emoTapped(_ sender: UIButton) {
-
+        
+        var updateValue : [Int] = [UserDefaults.standard.integer(forKey: "emotion")]
+        
         emotionArray[sender.tag] += 1
         
-        //emoLabelCollection[sender.tag].text = resultLabelAppear(sender.tag)
+        emoLabelCollection[sender.tag].text = resultLabelAppear(sender.tag)
+        
+        for i in 0...sender.tag - 1{
+            updateValue[i] = emotionArray[i]
+            UserDefaults.standard.set(updateValue[i], forKey: "emotion")
+            emoLabelCollection[i].text = resultLabelAppear(i)
+        }
+        
+        
+        //emoLabelCollection[sender.tag].text = resultLabelAppear(UserDefaults.standard.integer(forKey: "emotion"))
+        
+        
+        
+        //let currentValue = UserDefaults.standard.array(forKey: "emotion")
+        
+        //let updateValue = currentValue[] + 1
+        
+        //UserDefaults.standard.set(updateValue, forKey: "emotion")
+        
+        
         
         //showAlertController()
         
-        let emotion1 = sender.tag
+//        let emotion1 = sender.tag
         
-        switch emotion1 {
-        case emotion.happy.rawValue:
-            emoLabelCollection[emotion1].text = resultLabelAppear(emotion1)
-        case emotion.boring.rawValue:
-            emoLabelCollection[emotion1].text = resultLabelAppear(emotion1)
-        case emotion.depressed.rawValue:
-            emoLabelCollection[emotion1].text = resultLabelAppear(emotion1)
-        case emotion.embarrased.rawValue:
-            emoLabelCollection[emotion1].text = resultLabelAppear(emotion1)
-        case emotion.like.rawValue:
-            emoLabelCollection[emotion1].text = resultLabelAppear(emotion1)
-        case emotion.love.rawValue:
-            emoLabelCollection[emotion1].text = resultLabelAppear(emotion1)
-        case emotion.sad.rawValue:
-            emoLabelCollection[emotion1].text = resultLabelAppear(emotion1)
-        case emotion.sleepy.rawValue:
-            emoLabelCollection[emotion1].text = resultLabelAppear(emotion1)
-        case emotion.upset.rawValue:
-            emoLabelCollection[emotion1].text = resultLabelAppear(emotion1)
-        default :
-            print("잘못된 입력입니다.")
+//        switch emotion1 {
+//        case emotion.happy.rawValue:
+//            emoLabelCollection[emotion1].text = resultLabelAppear(emotion1)
+//        case emotion.boring.rawValue:
+//            emoLabelCollection[emotion1].text = resultLabelAppear(emotion1)
+//        case emotion.depressed.rawValue:
+//            emoLabelCollection[emotion1].text = resultLabelAppear(emotion1)
+//        case emotion.embarrased.rawValue:
+//            emoLabelCollection[emotion1].text = resultLabelAppear(emotion1)
+//        case emotion.like.rawValue:
+//            emoLabelCollection[emotion1].text = resultLabelAppear(emotion1)
+//        case emotion.love.rawValue:
+//            emoLabelCollection[emotion1].text = resultLabelAppear(emotion1)
+//        case emotion.sad.rawValue:
+//            emoLabelCollection[emotion1].text = resultLabelAppear(emotion1)
+//        case emotion.sleepy.rawValue:
+//            emoLabelCollection[emotion1].text = resultLabelAppear(emotion1)
+//        case emotion.upset.rawValue:
+//            emoLabelCollection[emotion1].text = resultLabelAppear(emotion1)
+//        default :
+//            print("잘못된 입력입니다.")
         
     }
     
@@ -134,15 +160,15 @@ class ViewController: UIViewController {
     
     /*
     todo
-     1. emotionDiary 코드 수정
      2. bamin autolayout 수정
-     3. 오늘 과제
-     4. til
      */
     
-    
-    
+    // 파일 지울때 Move to trash -> xcode 안에있는 asset을 삭제
+    //              reference -> 다른 위치에 있는 파일과 연결을 끊음
+    // 파일 추가할 때 added folders -> create group 복사 붙여넣기 같은
+    //             reference -> 다른 위치에 있는 파일을 연결함
     
 }
 
-}
+
+
